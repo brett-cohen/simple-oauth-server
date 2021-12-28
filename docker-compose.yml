@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  auth_server:
+    build:
+      dockerfile: Dockerfile
+      context: ./AuthServer/auth
+    volumes:
+      - ./AuthServer:/auth
+    ports:
+      - '8000:8000'
+  protected_api:
+    build:
+      dockerfile: Dockerfile
+      context: ./ProtectedAPI/api
+    volumes:
+      - ./ProtectedApi:/api
+    ports:
+      - '8001:8001'
+  client_ui:
+    build:
+      dockerfile: Dockerfile
+      context: ./ClientUI
+    volumes:
+      - /client/node_modules
+      - ./ClientUI:/client
+    ports:
+      - '8002:8002'

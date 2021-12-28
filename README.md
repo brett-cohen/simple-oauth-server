@@ -31,3 +31,7 @@ The goal is to gain a better understanding of how Oauth works via a concrete exa
 
 - Authenticate with a third party service using Oauth
 - User account authentication with OpenID
+
+# Running
+
+To start all three apps, simply run `docker-compose up` in the base directory.
