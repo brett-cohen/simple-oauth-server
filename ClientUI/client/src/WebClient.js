@@ -7,11 +7,4 @@ const getRandomFromAPI = () => {
         .catch((error) => error)
 }
 
-const getTokenFromAuth = () => {
-    axios.get("http://localhost:8000/auth_server/token")
-        .then((response) => {
-            console.log(response)
-        })
-}
-
-export {getRandomFromAPI, getTokenFromAuth}
+export {getRandomFromAPI}

@@ -1,7 +1,7 @@
 from django.urls import path
 
-from . import views
+from .views import RandomEndpoint
 
 urlpatterns = [
-    path('random', views.random, name='random'),
+    path('random', RandomEndpoint.as_view())
 ]
