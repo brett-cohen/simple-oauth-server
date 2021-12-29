@@ -3,6 +3,8 @@
 This project will be a simple implementation of Oauth between a client, authorization server, and protected API.
 The goal is to gain a better understanding of how Oauth works via a concrete example. 
 
+For an example of the project running and closing thoughts, see [the wiki](https://github.com/brett-cohen/simple-oauth-server/wiki).
+
 ## Goals
 
 - An authentication server that
